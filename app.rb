@@ -111,6 +111,7 @@ end
 get '/' do
   # Render the view
   @res_list = disk_quota()
+  @user = Etc.getpwuid.name
   puts "RESLIST"
   puts @res_list
   erb :index

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DiskQuota - Alvis OnDemand</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/public/favicon.ico" />
+
+  <script src="/pun/sys/dashboard/assets/application-0e96f181e548d7624cc5314c9ee8db74ffd01705b227aba31d9a4ebd795bc61a.js" nonce="CXyaWUp60eBMdMtBAhB+fw=="></script>
+  <link rel="stylesheet" media="all" href="/pun/sys/dashboard/assets/application-f75911f578cb59edc66bd3b2f78f4f3a6ed3f8b13ce8d643bea94465fd2ae112.css" nonce="CXyaWUp60eBMdMtBAhB+fw==" />
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="qGenORCBgW5yZuyVKtAnhiWd1aXjzwKOZ3pEA-Y6hS7q5mNLr1O2zao5mPFqLNYoSiAZEdAzOx3gQe0zU6prXQ" />
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- configuration options exposed to javascript -->
+  <meta id="ood_config"
+    data-bg-color=""
+    data-link-bg-color=""
+  />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md shadow-sm navbar-color navbar-dark" aria-label="Navigation">
+      <a class="navbar-brand" href="/pun/sys/dashboard/">Alvis OnDemand</a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+            
+            <li class="nav-item dropdown" title="Files">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Files<span class="caret"></span></a>
+
+  <ul class="dropdown-menu">
+      
+      
+          <li>
+            <a title="Home Directory" class="dropdown-item" href="/pun/sys/dashboard/files/fs/cephyr/users/<%= @user %>/Alvis">
+            <i id="" class="fas fa-home fa-fw app-icon" title="FontAwesome icon specified: home" aria-hidden="true"></i> Home Directory
+</a>          </li>
+          <li>
+            <a title="/cephyr/NOBACKUP/groups/alvis" class="dropdown-item" href="/pun/sys/dashboard/files/fs/cephyr/NOBACKUP/groups/alvis">
+            <i id="" class="fas fa-folder fa-fw app-icon" title="FontAwesome icon specified: folder" aria-hidden="true"></i> /cephyr/NOBACKUP/groups/alvis
+</a>          </li>
+          <li>
+            <a title="/cephyr/NOBACKUP/Datasets/" class="dropdown-item" href="/pun/sys/dashboard/files/fs/cephyr/NOBACKUP/Datasets/">
+            <i id="" class="fas fa-folder fa-fw app-icon" title="FontAwesome icon specified: folder" aria-hidden="true"></i> /cephyr/NOBACKUP/Datasets/
+</a>          </li>
+          <li>
+            <a title="/mimer/NOBACKUP/Datasets/" class="dropdown-item" href="/pun/sys/dashboard/files/fs/mimer/NOBACKUP/Datasets/">
+            <i id="" class="fas fa-folder fa-fw app-icon" title="FontAwesome icon specified: folder" aria-hidden="true"></i> /mimer/NOBACKUP/Datasets/
+</a>          </li>
+  </ul>
+</li>
+<li class="nav-item dropdown" title="Jobs">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jobs<span class="caret"></span></a>
+
+  <ul class="dropdown-menu">
+      
+      
+          <li>
+            <a title="Active Jobs" class="dropdown-item" href="/pun/sys/dashboard/apps/show/activejobs">
+            <i id="" class="fa fa-clock-o fa-fw app-icon" title="FontAwesome icon specified: clock-o" aria-hidden="true"></i> Active Jobs
+</a>          </li>
+          <li>
+            <a title="Job Composer" class="dropdown-item" target="_blank" href="/pun/sys/dashboard/apps/show/myjobs">
+            <i id="" class="fas fa-magic fa-fw app-icon" title="FontAwesome icon specified: magic" aria-hidden="true"></i> Job Composer
+</a>          </li>
+  </ul>
+</li>
+<li class="nav-item dropdown" title="Clusters">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clusters<span class="caret"></span></a>
+
+  <ul class="dropdown-menu">
+      
+      
+          <li>
+            <a title="Alvis Shell Access" class="dropdown-item" target="_blank" href="/pun/sys/shell/ssh/alvis1">
+            <i id="" class="fas fa-terminal fa-fw app-icon" title="FontAwesome icon specified: terminal" aria-hidden="true"></i> Alvis Shell Access
+</a>          </li>
+  </ul>
+</li>
+<li class="nav-item dropdown" title="Interactive Apps">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Interactive Apps<span class="caret"></span></a>
+
+  <ul class="dropdown-menu">
+      
+      <li class="dropdown-header">Desktops</li>
+          <li>
+            <a title="Desktop" class="dropdown-item" href="/pun/sys/dashboard/batch_connect/sys/bc_desktop/session_contexts/new">
+            <i id="" class="fa fa-desktop fa-fw app-icon" title="FontAwesome icon specified: desktop" aria-hidden="true"></i> Desktop
+</a>          </li>
+      <li class="dropdown-divider" role="separator"></li>
+      <li class="dropdown-header">Servers</li>
+          <li>
+            <a title="Jupyter" class="dropdown-item" href="/pun/sys/dashboard/batch_connect/sys/bc_osc_jupyter/session_contexts/new">
+            <img class="app-icon" title="/pun/sys/dashboard/apps/icon/bc_osc_jupyter/sys/sys" aria-hidden="true" src="/pun/sys/dashboard/apps/icon/bc_osc_jupyter/sys/sys" /> Jupyter
+</a>          </li>
+          <li>
+            <a title="RStudio" class="dropdown-item" href="/pun/sys/dashboard/batch_connect/sys/bc_alvis_rstudio/session_contexts/new">
+            <img class="app-icon" title="/pun/sys/dashboard/apps/icon/bc_alvis_rstudio/sys/sys" aria-hidden="true" src="/pun/sys/dashboard/apps/icon/bc_alvis_rstudio/sys/sys" /> RStudio
+</a>          </li>
+  </ul>
+</li>
+<li class="nav-item dropdown" title="Reports">
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports<span class="caret"></span></a>
+
+  <ul class="dropdown-menu">
+      
+      
+          <li>
+            <a title="Disk_Quota" class="dropdown-item" href="/pun/sys/dashboard/apps/show/diskquota">
+            <i id="" class="fa fa-terminal fa-fw app-icon" title="FontAwesome icon specified: terminal" aria-hidden="true"></i> Disk_Quota
+</a>          </li>
+  </ul>
+</li>
+
+            <li class="nav-item" title="My Interactive Sessions">
+  <a class="nav-link" href="/pun/sys/dashboard/batch_connect/sessions" aria-current="page">
+    <i class="fas fa-window-restore" aria-hidden="true"></i><span class="d-sm-none d-md-none d-lg-inline"> My Interactive Sessions</span>
+</a></li>
+            
+        </ul>
+
+        <ul class="navbar-nav">
+            
+            <li class="nav-item dropdown" title="Help" >
+  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-question-circle" aria-hidden="true"></i><span class="d-sm-none d-md-none d-lg-inline"> Help</span><span class="caret"></span>
+  </a>
+
+  <ul class="dropdown-menu dropdown-menu-right" role="menu">
+    <a title="Contact Support" class="dropdown-item " target="_blank" href="https://supr.snic.se/support/login/?centre_resource=r75">
+  <i id="" class="fa fa-question-circle fa-fw app-icon" title="FontAwesome icon specified: question-circle" aria-hidden="true"></i>
+  <span>
+    Contact Support
+</span></a>
+    <a title="Online Documentation" class="dropdown-item " target="_blank" href="https://www.c3se.chalmers.se/documentation/alvis-ondemand/">
+  <i id="" class="fa fa-info-circle fa-fw app-icon" title="FontAwesome icon specified: info-circle" aria-hidden="true"></i>
+  <span>
+    Online Documentation
+</span></a>
+    
+    
+    <a title="Restart Web Server" class="dropdown-item " href="/nginx/stop?redir=/pun/sys/dashboard/">
+  <i id="" class="fa fa-sync fa-fw app-icon" title="FontAwesome icon specified: sync" aria-hidden="true"></i>
+  <span>
+    Restart Web Server
+</span></a>
+
+  </ul>
+</li>
+
+            <li class="nav-item" data-container="body" data-toggle="popover" data-content="Logged in as <%= @user %>" data-placement="bottom">
+  <a class="nav-link disabled">
+    <i class="fas fa-user" aria-hidden="true" title="Logged in as <%= @user %>" aria-hidden="true"></i><span class="d-sm-none d-md-none d-lg-inline"> Logged in as <%= @user %></span>
+  </a>
+</li>
+            <li class="nav-item">
+  <a class="nav-link" href="/logout"><i class="fas fa-sign-out-alt" aria-hidden="true"></i><span class="d-sm-none d-md-none d-lg-inline"> Log Out</span></a>
+</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-md content mt-4" role="main">
+    <h1>Disk Quota</h1>
+    <%== yield %>
+  </div><!-- /.container -->
+
+  <footer class="d-flex m-0 mt-4 justify-content-between align-items-center p-4">
+  <div class="mr-2">
+    <a href="https://openondemand.org">
+      <img class="footer-logo" alt="Powered by Open OnDemand" height="40px" src="/pun/sys/dashboard/assets/OpenOnDemand_powered_by_RGB-cb3aad5ff5350c7994f250fb334ddcc72e343233ce99eb71fda93beddd76a847.svg" />
+</a>  </div>
+  <span>OnDemand version: latest</span>
+</footer>
+
+</body>
+</html>
