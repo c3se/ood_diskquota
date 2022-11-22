@@ -1,5 +1,5 @@
 ![Alvis](alvis_logo.svg)
-# OnDemand DiskQuota
+# Alvis OnDemand DiskQuota
 
 Passenger plugin for displaying live disk quota at [Alvis OnDemand](https://portal.c3se.chalmers.se).
 ![diskquota](diskquota.png)
