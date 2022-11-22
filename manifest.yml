@@ -1,0 +1,7 @@
+---
+name: DiskQuota
+category: Reports
+icon: fa://terminal
+description: |-
+  Display DiskQuota
+new_window: false
